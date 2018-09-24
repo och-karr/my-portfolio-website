@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    font-size: 62.5%;
+}
+div {
+	margin: 0;
+	padding: 0;
+}
+
+#square {
+	font-size: 600px; /* Sterowanie rozmiarem figury. */
+	width: 1em;
+	height: 1em;
+	background-color: #F34A53;
+	/* margin: 55px auto 0; */
+    transform: rotate( 45deg );
+    webkit-transform: rotate( 45deg );
+    position: relative;
+    top: -20%;
+    right: -90%;
+    /* transition: all 0.5s ease-in ; */
+}
+
+/* .section-1:hover #square {
+    right: -90%;
+} */
+.section-2:hover #square2 {
+    left: -25%;
+}
+
+/* @keyframes example {
+    from {right: -120%;}
+    to {right: -90%;}
+}
+
+@keyframes example2 {
+    from {left: -60%;}
+    to {left: -30%;}
+} */
+
+#square2 {
+	font-size: 600px; /* Sterowanie rozmiarem figury. */
+	width: 1em;
+	height: 1em;
+	background-color: #F34A53;
+	/* margin: 55px auto 0; */
+    transform: rotate( 45deg );
+    position: relative;
+    top: -20%;
+    left: -30%;
+    transition: all 0.5s ease-in ;
+    
+}
+
+
+nav {
+    background: #fff;
+    /* text-align: right; */
+    /* position: fixed; */
+    /* z-index: 5; */
+    left: 0;
+    right: 0;
+}
+
+nav a {
+    font-size: 1.4rem;
+    padding: 0 2%;
+    float: right;
+    text-decoration: none;
+}
+
+a:hover, a:link {
+    color: black;
+}
+
+.section:nth-of-type(1) {
+    background: #fff;
+    /* padding-top: 5%; */
+}
+
+.section:nth-of-type(1) h1 {
+    padding-top: 10%;
+    font-size: 2.4rem;
+}
+
+.section:nth-of-type(2) {
+	background: rgb(226, 226, 226);
+}
+.section:nth-of-type(3) {
+	background: rgb(201, 201, 201);
+}
+.section:nth-of-type(4) {
+	background: rgb(163, 163, 163);
+}
+.section:nth-of-type(5) {
+	background: gray;
+}
+h1, 
+h2 {
+	text-align: center;
+}
+
+@media screen and (min-width: 1200px) { 
+    .w-container { max-width: 1170px; }  
+    body,html { overflow: hidden !important; } 
+    }
+    @media screen and (max-width: 768px) {
+    body,html { overflow: scroll; }
+    }
+    

@@ -1,0 +1,61 @@
+/* #triangle {
+	width: 0;
+	height: 0;
+	border-top: 150px solid transparent;
+	border-bottom: 400px solid transparent;
+	border-right: 300px solid #F34A53;
+    position: relative;
+    left: 80%;
+} */
+
+/* #triangle {
+	width: 0;
+	height: 0;
+	border-top: 150px solid transparent;
+	border-bottom: 400px solid transparent;
+	border-right: 300px solid #F34A53;
+    position: relative;
+    left: 80%;
+}
+
+#triangle2 {
+	width: 0;
+	height: 0;
+	border-top: 150px solid transparent;
+	border-bottom: 400px solid transparent;
+	border-left: 300px solid #F34A53;
+    position: relative;
+    top: 200px;
+    right:10%;
+} */
+
+#square {
+	font-size: 600px; /* Sterowanie rozmiarem figury. */
+	width: 1em;
+	height: 1em;
+	background-color: #F34A53;
+	/* margin: 55px auto 0; */
+    transform: rotate( 45deg );
+    position: relative;
+    top: 30%;
+	right: -90%;
+	animation-name: example;
+    animation-duration: 1s;
+}
+
+@keyframes example {
+    from {right: -120%;}
+    to {right: -90%;}
+}
+
+#square2 {
+	font-size: 600px; /* Sterowanie rozmiarem figury. */
+	width: 1em;
+	height: 1em;
+	background-color: #F34A53;
+	/* margin: 55px auto 0; */
+    transform: rotate( 45deg );
+    position: relative;
+    /* top: 60%; */
+    left: -40%;
+}
