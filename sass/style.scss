@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
+$main-color: #F34A53;
 
 * {
 	margin: 0;
@@ -9,13 +10,17 @@ body {
     font-family: 'Poppins';
     margin: 0;
     font-size: 62.5%;
+    overflow-x: hidden;
+    position: relative;
 }
 
 .section {
     height: 100vh;
+    width: 90%;
+    margin: auto;
     
     .my-navbar {
-        background: #fff;
+        background: rgba(255, 255, 255, 0.836);
         border: none;
     }
 
@@ -25,6 +30,24 @@ body {
             font-size: 3em;
         }
     }
+
+    .line {
+        background: $main-color;
+        border: 1px solid $main-color;
+        border-radius: 20%;
+        width: 5%;
+        height: 5px;
+        margin: 15px auto;
+    }
+
+    h2 {
+        padding: 20px;
+    }
+
+    p {
+        font-size: 2.5em;
+        text-align: justify;
+    }
 }
 
 .section-1 {
@@ -33,8 +56,20 @@ body {
         padding-top: 17%;
         font-size: 4rem;
     }
+
+    h2 {
+        font-size: 2rem;
+        padding: 0;
+        margin: 10px;
+        span {
+            color: $main-color;
+        }
+    }
 }
 
+.section-2 {
+    
+}
 // .section:nth-of-type(1) {
 //     background: #fff;
     /* padding-top: 5%; */
@@ -75,27 +110,26 @@ h2 {
 
 
 #square1 {
-	font-size: 600px; /* Sterowanie rozmiarem figury. */
-	width: 1em;
-	height: 1em;
-	background-color: #F34A53;
+	background-color: $main-color;
     transform: rotate( 45deg );
-    position: relative;
-    top: -20%;
-    right: -90%;
+    position: absolute;
+    top: 15%;
+    right: -33%;
+    z-index: -5;
+    width: 600px;
+    height: 600px;
+
 }
 
 #square2 {
-	font-size: 600px; /* Sterowanie rozmiarem figury. */
-	width: 1em;
-	height: 1em;
-	background-color: #F34A53;
-	/* margin: 55px auto 0; */
+	background-color: $main-color;
     transform: rotate( 45deg );
-    position: relative;
-    top: -20%;
-    left: -30%;
-    transition: all 0.5s ease-in ;
+    position: absolute;
+    top: 55%;
+    left: -38%;
+    z-index: -5;
+    width: 600px;
+    height: 600px;
     
 }
 
@@ -109,7 +143,38 @@ h2 {
 //     body,html { overflow: scroll; }
 //     }
 
-@media (max-width: 768px) {
+
+
+@media (max-width: 992px) {
+    #square1 {
+        top: 12%;
+        right: -60%;
+    }
+
+    #square2 {
+        top: 55%;
+        left: -60%;
+    }
+    .section-1 {
+        margin-top: 110px;
+        h1 {
+            padding-top: 10%;
+            font-size: 3rem;
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+    #square1 {
+        top: 12%;
+        right: -120%;
+    }
+
+    #square2 {
+        top: 55%;
+        left: -120%;
+    }
     .section-1 {
         margin-top: 110px;
         h1 {
