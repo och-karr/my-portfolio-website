@@ -7,18 +7,20 @@ $main-color: #F34A53;
 }
 
 body {
-    font-family: 'Poppins';
     margin: 0;
+	padding: 0;
+    font-family: 'Poppins';
     font-size: 62.5%;
-    overflow-x: hidden;
-    position: relative;
+    // width: 100vh;
 }
 
-.section {
-    height: 100vh;
-    width: 90%;
-    margin: auto;
-    
+.container {
+    margin: 0;
+	padding: 0;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
     .my-navbar {
         background: rgba(255, 255, 255, 0.836);
         border: none;
@@ -30,6 +32,13 @@ body {
             font-size: 3em;
         }
     }
+}
+
+.section {
+	padding: 0;
+    height: 100vh;
+    width: 90%;
+    margin: auto;
 
     .line {
         background: $main-color;
@@ -58,7 +67,7 @@ body {
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 3em;
         padding: 0;
         margin: 10px;
         span {
@@ -183,4 +192,32 @@ h2 {
         }
     }
 
+}
+
+@media (max-width : 480px) {
+    .section {
+        height: 50vh;
+    }
+
+    h1 {
+        font-size: 8em;
+    }
+
+    h2 {
+        font-size: 4.5em;
+    }
+
+    p {
+        font-size: 3em;
+    }
+
+    #square1 {
+        top: 12%;
+        right: -40%;
+    }
+
+    #square2 {
+        top: 55%;
+        left: -40%;
+    }
 }
