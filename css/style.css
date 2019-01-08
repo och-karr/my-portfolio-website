@@ -3,7 +3,7 @@
 
 body { margin: 0; padding: 0; font-family: 'Poppins'; font-size: 62.5%; }
 
-.container { margin: 0; padding: 0; width: 100%; overflow: hidden; position: relative; }
+.container { margin: 0; padding: 0; width: 100%; position: relative; }
 
 .container .my-navbar { background: rgba(255, 255, 255, 0.836); border: none; }
 
@@ -11,23 +11,28 @@ body { margin: 0; padding: 0; font-family: 'Poppins'; font-size: 62.5%; }
 
 .container .menu-view a { font-size: 3em; }
 
-.section { padding: 0; height: 100vh; width: 90%; margin: auto; }
+.section { padding: 0; height: 100vh; width: 80%; margin: auto; line-height: 5em; }
 
-.section .line { background: #F34A53; border: 1px solid #F34A53; border-radius: 20%; width: 5%; height: 5px; margin: 15px auto; }
+.section .line { background: #F34A53; border: 1px solid #F34A53; border-radius: 20%; width: 6%; height: 5px; margin: 12px auto; }
 
-.section h2 { padding: 20px; }
+.section h2 { padding: 20px; font-size: 6em; }
 
 .section p { font-size: 2.5em; text-align: justify; }
 
 .section-1 { margin-top: 50px; }
 
-.section-1 h1 { padding-top: 17%; font-size: 4rem; }
+.section-1 h1 { padding-top: 17%; font-size: 6rem; }
 
 .section-1 h2 { font-size: 3em; padding: 0; margin: 10px; }
 
 .section-1 h2 span { color: #F34A53; }
 
-/* padding-top: 5%; */
+.section-2 { height: 80vh; }
+
+.section-3 div { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.section-3 div img { height: auto; width: auto; max-width: 300px; max-height: 200px; margin: 20px 10px; }
+
 ul a { font-size: 1.4rem; padding: 0 2%; float: right; text-decoration: none; }
 
 a:hover, a:link { color: black; }
@@ -41,16 +46,9 @@ h1, h2 { text-align: center; }
 @media (max-width: 992px) { #square1 { top: 12%; right: -60%; }
   #square2 { top: 55%; left: -60%; }
   .section-1 { margin-top: 110px; }
-  .section-1 h1 { padding-top: 10%; font-size: 3rem; } }
+  .section-1 h1 { padding-top: 10%; font-size: 4rem; } }
 
 @media (max-width: 767px) { #square1 { top: 12%; right: -120%; }
   #square2 { top: 55%; left: -120%; }
   .section-1 { margin-top: 110px; }
-  .section-1 h1 { padding-top: 10%; font-size: 3rem; } }
-
-@media (max-width: 480px) { .section { height: 50vh; }
-  h1 { font-size: 8em; }
-  h2 { font-size: 4.5em; }
-  p { font-size: 3em; }
-  #square1 { top: 12%; right: -40%; }
-  #square2 { top: 55%; left: -40%; } }
+  .section-1 h1 { padding-top: 10%; font-size: 4rem; } }
