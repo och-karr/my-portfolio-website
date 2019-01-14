@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
 $main-color: #F34A53;
+$grey-color: #333333;
 
 * {
 	margin: 0;
@@ -7,11 +8,13 @@ $main-color: #F34A53;
 }
 
 body {
-    margin: 0;
+    margin: auto;
 	padding: 0;
     font-family: 'Poppins';
-    font-size: 62.5%;
-    // width: 100vh;
+    font-size: 0.65em;
+    overflow-x: hidden;
+    position: relative;
+    align-content: center;
 }
 
 .container {
@@ -19,11 +22,38 @@ body {
 	padding: 0;
     width: 100%;
     // overflow: scroll;
-    position: relative;
+    
 
     .my-navbar {
         background: rgba(255, 255, 255, 0.836);
         border: none;
+
+        .my-buttons {
+            width: 130px;
+            padding: 5px 0;
+    
+            i {
+                display: inline-block;
+                // padding: 0 10px;
+                font-size: 1em;
+                width: 27px;
+                height: 27px;
+                border-radius: 50%;
+                background-color: white;
+                // margin: 10px;
+                line-height: 27px;
+                text-align: center;
+                transition: color 0.3s, transform 0.3s;
+                color: $grey-color;
+    
+                &:hover {
+                    cursor: pointer;
+                    color: #fff;
+                    transform: scale(1.2);
+                    background-color: $main-color; 
+                } 
+            }
+        }
     }
 
     .menu-view {
@@ -32,12 +62,13 @@ body {
             font-size: 3em;
         }
     }
+
 }
 
 .section {
 	padding: 0;
-    height: 100vh;
-    width: 80%;
+    height: 450px;
+    width: 75%;
     margin: auto;
     line-height: 5em;
 
@@ -62,6 +93,7 @@ body {
 }
 
 .section-1 {
+    height: 100vh;
     margin-top: 50px;
     h1 {
         padding-top: 17%;
@@ -79,10 +111,13 @@ body {
 }
 
 .section-2 {
-    height: 80vh;
+    a {
+        font-weight: 500;
+    }
 }
 
 .section-3 {
+    height: 600px;
     div {
         display: flex;
         justify-content: space-around;
@@ -91,16 +126,31 @@ body {
         .image-container {
             .image {
                 position: absolute;
-                background: url(../images/a-kanban-board.JPG) red;
-                background-size: cover; 
+                // background: url(../images/a-kanban-board.JPG) red;
                 width: 300px;
                 height: 200px;
                 z-index: -2;
             }
             .pic-on {
 
-                width: 60%;
+                width: 65%;
                 display: none;
+                color: #fff;
+                text-align: center;
+
+                h3 {
+                    text-transform: uppercase;
+                    font-size: 3.0em;
+                    text-align: center;
+                    color: $main-color;
+                    margin-bottom: 0;
+                }
+                
+                p {
+                    font-size: 2em;
+                    line-height: 1.5em;
+                    margin: 0;
+                }
 
                 i {
                     // background-color: white;
@@ -117,11 +167,12 @@ body {
                 }
 
                 .fa {
-                    font-size: 32px;
+                    font-size: 28px;
                     text-align: center;
-                    line-height:  32px;
-                    padding: 10px;
+                    line-height:  28px;
+                    padding: 7px;
                     margin: auto;
+                    margin-top: 0;
                 }
             }
     
@@ -156,6 +207,85 @@ body {
         //     margin: 20px 10px;
         // }
     }
+}
+
+.section-4 {
+
+    a {
+        // text-decoration: underline;
+        font-style: italic;
+        color: $grey-color;
+    }
+
+    span {
+        font-size: 1.2em;
+        font-weight: 600;
+
+    }
+
+}
+
+.section-5 {
+
+    
+
+    .contact-columns {
+        display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+        h3 {
+            text-align: center;
+        }
+    }
+    
+    .my-btn {
+        display: block;
+        text-align: left;
+        padding-left: 50px;
+        
+        i {
+            padding: 0 10px;
+            font-size: 3em;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            margin: 10px;
+            line-height: 50px;
+            text-align: center;
+            transition: color 0.3s, transform 0.3s;
+            color: $grey-color;
+        }
+
+        span {
+            font-size: 3em;
+        }
+
+        &:hover {
+            cursor: pointer;
+            i {
+                color: #fff;
+                transform: scale(1.2);
+                
+                background-color: $main-color;
+            }
+            
+        } 
+    }
+    
+      
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    font-size: 2em;
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+    background-color: $main-color;
+    margin: 0;
+    
 }
 
 ul a {
@@ -230,6 +360,16 @@ h1, h2 {
         h1 {
             padding-top: 10%;
             font-size: 4rem;
+        }
+    }
+
+    .section-4 {
+        ul {
+            list-style: none;
+            padding-left: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
     }
 }
