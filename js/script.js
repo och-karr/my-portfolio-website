@@ -109,5 +109,22 @@ insertImage(projects);
 insertLinks(projects);
 
 
+// function onLinkClick() {
+//     console.log(anchors[2]);
+//     document.getElementById("section-3").scrollIntoView();
+//     // will scroll to 4th h3 element
+//   }
 
+// var myNav = document.getElementById("my-navbar");
+// var anchors = myNav.getElementsByTagName("a");
+
+// anchors[2].addEventListener("click", onLinkClick);
+
+$(".navbar-collapse").find("a").click(function(e) {
+    e.preventDefault();
+    var section = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(section).offset().top
+    });
+});
 
