@@ -27,8 +27,13 @@ body {
     border: none;
 
     .my-buttons {
-        width: 130px;
-        padding: 5px 0;
+        width: 30%;
+        padding: 12px 0;
+
+        .my-btn {
+            display: inline;
+            padding-left: 10px;
+        }
 
         i {
             display: inline-block;
@@ -264,7 +269,7 @@ body {
         }
 
         span {
-            font-size: 2.5em;
+            font-size: 2.2em;
 
             a {
                 color: $grey-color;
@@ -292,7 +297,11 @@ footer {
     color: white;
     text-align: center;
     background-color: $main-color;
-    margin: 0; 
+    margin: 0;
+
+    p {
+        margin: 0;
+    }
 }
 
 /* ---SQUARES--- */
@@ -301,7 +310,7 @@ footer {
 	background-color: $main-color;
     transform: rotate( 45deg );
     position: absolute;
-    top: 15%;
+    top: 13%;
     right: -33%;
     z-index: -5;
     width: 600px;
@@ -313,13 +322,22 @@ footer {
     transform: rotate( 45deg );
     position: absolute;
     top: 55%;
-    left: -38%;
+    left: -36%;
     z-index: -5;
     width: 600px;
     height: 600px;
 }
 
 /* ---MEDIA--- */
+
+@media (max-width: 1200px) {
+
+    .section-5 {
+        .my-btn-container {
+            padding-left: 0;
+        }
+    }
+}
 
 @media (max-width: 992px) {
     #square1 {
@@ -328,44 +346,68 @@ footer {
     }
 
     #square2 {
-        top: 55%;
+        top: 60%;
         left: -60%;
     }
-    .section-1 {
-        margin-top: 110px;
-        h1 {
-            padding-top: 10%;
-            font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+
+    #square1 {
+        top: 5%;
+        right: -90%;
+    }
+
+    #square2 {
+        top: 60%;
+        left: -90%;
+    }
+
+    .section {
+        padding-top: 70px;
+    
+        .line {
+            width: 13%;
+        }
+    }
+
+    .my-navbar {
+        .navbar-collapse ul {
+            display: flex;
+            justify-content: space-around;    
         }
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
+
     #square1 {
-        top: 12%;
-        right: -120%;
+        top: 5%;
+        right: -110%;
     }
 
     #square2 {
         top: 55%;
-        left: -120%;
+        left: -110%;
     }
 
-    .section-1 {
-        margin-top: 110px;
-        h1 {
-            padding-top: 10%;
-            font-size: 4rem;
+    .my-navbar {
+        .navbar-collapse ul a {
+            padding: 2px;
         }
     }
 
-    .section-4 {
-        ul {
-            list-style: none;
-            padding-left: 20px;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
+    .section {
+        width: 85%;
+        line-height: 4em;
     }
+
+    .section-5 {
+
+        .my-btn i {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+        }
+    }     
 }

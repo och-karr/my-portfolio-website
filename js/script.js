@@ -1,23 +1,3 @@
-// if($(window).width() < 1024){ $('#fullpage').removeAttr('id'); }
-    
-// if($(window).width() > 900){
-// $(document).ready(function() {
-//     $('#fullpage').fullpage({
-//         navigation: true,
-//         navigationPosition: 'right',
-//         slidesNavigation: true,
-//         slidesNavPosition: 'bottom',
-//         controlArrows: false,
-//         verticalCentered: true,
-//         paddingTop: '3em',
-//         paddingBottom: '10px',
-//         fixedElements: '#header, .footer',
-//         responsiveWidth: 0,
-//         responsiveHeight: 0,
-//     });
-// });
-// }
-
 var projects = [
     {
         id: 1,
@@ -70,7 +50,6 @@ var projects = [
     }
 ];
 
-
 function insertImage(array) {
     var images = document.getElementsByClassName("image");
     for (var i=0; i<images.length; i++) {
@@ -103,22 +82,9 @@ function insertLinks(array) {
     }
 }
 
-
 insertTitleAndDesc(projects);
 insertImage(projects);
 insertLinks(projects);
-
-
-// function onLinkClick() {
-//     console.log(anchors[2]);
-//     document.getElementById("section-3").scrollIntoView();
-//     // will scroll to 4th h3 element
-//   }
-
-// var myNav = document.getElementById("my-navbar");
-// var anchors = myNav.getElementsByTagName("a");
-
-// anchors[2].addEventListener("click", onLinkClick);
 
 $(".navbar-collapse").find("a").click(function(e) {
     e.preventDefault();

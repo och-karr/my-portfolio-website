@@ -8,7 +8,9 @@ body { margin: auto; font-family: 'Poppins'; font-size: 0.65em; overflow-x: hidd
 /* ---NAVBAR--- */
 .my-navbar { background: rgba(255, 255, 255, 0.836); border: none; }
 
-.my-navbar .my-buttons { width: 130px; padding: 5px 0; }
+.my-navbar .my-buttons { width: 30%; padding: 12px 0; }
+
+.my-navbar .my-buttons .my-btn { display: inline; padding-left: 10px; }
 
 .my-navbar .my-buttons i { display: inline-block; font-size: 1em; width: 27px; height: 27px; border-radius: 50%; background-color: white; line-height: 27px; text-align: center; transition: color 0.3s, transform 0.3s; color: #333333; }
 
@@ -84,7 +86,7 @@ body { margin: auto; font-family: 'Poppins'; font-size: 0.65em; overflow-x: hidd
 
 .section-5 .my-btn i { padding: 0 10px; font-size: 3em; width: 50px; height: 50px; border-radius: 50%; background-color: white; margin: 3px 10px 2px 0; line-height: 50px; text-align: center; transition: color 0.3s, transform 0.3s; color: #333333; }
 
-.section-5 .my-btn span { font-size: 2.5em; }
+.section-5 .my-btn span { font-size: 2.2em; }
 
 .section-5 .my-btn span a { color: #333333; }
 
@@ -95,19 +97,27 @@ body { margin: auto; font-family: 'Poppins'; font-size: 0.65em; overflow-x: hidd
 /* ---FOOTER--- */
 footer { width: 100%; height: 50px; line-height: 50px; font-size: 2em; color: white; text-align: center; background-color: #F34A53; margin: 0; }
 
-/* ---SQUARES--- */
-#square1 { background-color: #F34A53; transform: rotate(45deg); position: absolute; top: 15%; right: -33%; z-index: -5; width: 600px; height: 600px; }
+footer p { margin: 0; }
 
-#square2 { background-color: #F34A53; transform: rotate(45deg); position: absolute; top: 55%; left: -38%; z-index: -5; width: 600px; height: 600px; }
+/* ---SQUARES--- */
+#square1 { background-color: #F34A53; transform: rotate(45deg); position: absolute; top: 13%; right: -33%; z-index: -5; width: 600px; height: 600px; }
+
+#square2 { background-color: #F34A53; transform: rotate(45deg); position: absolute; top: 55%; left: -36%; z-index: -5; width: 600px; height: 600px; }
 
 /* ---MEDIA--- */
-@media (max-width: 992px) { #square1 { top: 12%; right: -60%; }
-  #square2 { top: 55%; left: -60%; }
-  .section-1 { margin-top: 110px; }
-  .section-1 h1 { padding-top: 10%; font-size: 4rem; } }
+@media (max-width: 1200px) { .section-5 .my-btn-container { padding-left: 0; } }
 
-@media (max-width: 767px) { #square1 { top: 12%; right: -120%; }
-  #square2 { top: 55%; left: -120%; }
-  .section-1 { margin-top: 110px; }
-  .section-1 h1 { padding-top: 10%; font-size: 4rem; }
-  .section-4 ul { list-style: none; padding-left: 20px; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-wrap: wrap; flex-wrap: wrap; } }
+@media (max-width: 992px) { #square1 { top: 12%; right: -60%; }
+  #square2 { top: 60%; left: -60%; } }
+
+@media (max-width: 768px) { #square1 { top: 5%; right: -90%; }
+  #square2 { top: 60%; left: -90%; }
+  .section { padding-top: 70px; }
+  .section .line { width: 13%; }
+  .my-navbar .navbar-collapse ul { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; } }
+
+@media (max-width: 576px) { #square1 { top: 5%; right: -110%; }
+  #square2 { top: 55%; left: -110%; }
+  .my-navbar .navbar-collapse ul a { padding: 2px; }
+  .section { width: 85%; line-height: 4em; }
+  .section-5 .my-btn i { width: 30px; height: 30px; line-height: 30px; } }
