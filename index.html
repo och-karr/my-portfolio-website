@@ -16,7 +16,7 @@
 
     <div class="container">    
 
-      <nav class="navbar navbar-default navbar-fixed-top my-navbar" id="my-navbar">
+      <nav class="navbar navbar-default navbar-fixed-top my-navbar">
         <div class="container-fluid">
             <div class="navbar-brand my-buttons">
                 <div class="my-btn ">
@@ -43,12 +43,12 @@
           </div>
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right ul-menu-view">
-              <li class="menu-view my-link"><a href="#section-1">Start</a></li>
-              <li class="menu-view my-link"><a href="#section-2">O mnie</a></li>
-              <li class="menu-view my-link"><a href="#section-3">Projekty</a></li>
-              <li class="menu-view my-link"><a href="#section-4">Technologie</a></li>
-              <li class="menu-view my-link"><a href="#section-5">Kontakt</a></li>
+            <ul class="nav navbar-nav navbar-right ul-menu-view my-nav-ul">
+              <li class="menu-view my-link"><a class="go-to-section" href="#start-section">Start</a></li>
+              <li class="menu-view my-link"><a class="go-to-section" href="#about-me-section">O mnie</a></li>
+              <li class="menu-view my-link"><a class="go-to-section" href="#projects-section">Projekty</a></li>
+              <li class="menu-view my-link"><a class="go-to-section" href="#technologies-section">Technologie</a></li>
+              <li class="menu-view my-link"><a class="go-to-section" href="#contact-section">Kontakt</a></li>
             </ul>
           </div>
 
@@ -56,98 +56,112 @@
       </nav> 
 
         
-      <div class="section section-1" id="section-1">
-
-        <h1 data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
-          Karolina Och-Pudło
-        </h1>
-        <h2>Junior <span>Front-End</span> Developer</h2>
+      <div class="section start-section" id="start-section">
+        
+        <div class="name-title-container">
+          <h1 class="name-title" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+            Karolina Och-Pudło
+          </h1>
+          <h2  class="name-title-add">Junior <span class="name-title-add-color">Front-End</span> Developer</h2>
+        </div>
         <div  id="square1"></div>
 
       </div>
 
 
-      <div class="section section-2" id="section-2">
+      <div class="section about-me-section" id="about-me-section">
 
         <div id="square2"></div>
-        <h2>O mnie<div class="line"></div></h2>
+        <h2 class="section-title">O mnie<div class="line"></div></h2>
         
-        <p>
+        <p class="basic-text">
           Cześć! Jestem Karolina, pochodzę z Krakowa. Tworzeniem stron zaczęłam interesować się pod koniec 2017 roku i od tamtej pory rozwijam swoje umiejętności w tej dziedzinie.
           Po trzech miesiącach samodzielnej nauki zdecydowałam się na udział w półrocznym bootcampie Kodilli. Obecnie, już po kursie, samodzielnie rozwijam swoje umiejętności poprzez 
           czytanie książek związanych z tematem, ze szczególnym naciskiem na JavaScript - aby lepiej zgłębić jego tajemnice, robieniem małych projektów oraz rozwiązywaniem zadań na hackerrank i codewars. 
           Obecnie szukam pierwszej pracy lub stażu na stanowisku Junior Front-end Developera. Efekty mojej dotychczasowej pracy można zobaczyć na tej stronie. Zapraszam również do odwiedzenia 
-          mojego <a href="https://github.com/och-karr" target="_blank">Githuba</a>.<br>
-          A tutaj możesz zobaczyć moje <a href="./images/Och_Pudlo_Karolina_CV.pdf" target="_blank">CV</a>.
+          mojego <a class="go-to-important" href="https://github.com/och-karr" target="_blank">Githuba</a>.<br>
+          A tutaj możesz zobaczyć moje <a class="go-to-important" href="./images/Och_Pudlo_Karolina_CV.pdf" target="_blank">CV</a>.
         </p>
 
       </div>
 
 
-      <div class="section section-3" id="section-3">
+      <div class="section projects-section" id="projects-section">
 
-        <h2>Moje Projekty<div class="line"></div></h2>
+        <h2 class="section-title">Moje Projekty<div class="line"></div></h2>
 
         <div class="projects-container">
 
           <div class="image-container">
             <div class="pic-on">
-              <h3></h3>
-              <p></p>
-              <a class="demo" target="_blank"><i class="fa fa-search"></i></a>
-              <a class="code" target="_blank"><i class="fa fa-link"></i></a>
+              <h3 class="project-title">RWD website</h3>
+              <p class="project-decription">Strona RWD wykorzystująca HTML oraz Sass.</p>
+              <div class="projects-icon-links">
+                <a class="demo" href="https://och-karr.github.io/rwd_website/" target="_blank"><i class="fa fa-search"></i></a>
+                <a class="code" href="https://github.com/och-karr/rwd_website" target="_blank"><i class="fa fa-link"></i></a>
+              </div>
             </div>
-            <div class="image"></div>
+            <div class="project-image" style='background: url("./images/a-rwd-website.JPG"); background-size: cover;'></div>
           </div>
 
           <div class="image-container">
             <div class="pic-on">
-              <h3></h3>
-              <p></p>
-              <a class="demo" target="_blank"><i class="fa fa-search"></i></a>
-              <a class="code" target="_blank"><i class="fa fa-link"></i></a>
+              <h3 class="project-title">Kanban Board</h3>
+              <p class="project-decription">Projekt tablicy Kanban, wykorzystujący technologię jQuery oraz ajax.</p>
+              <div class="projects-icon-links">
+                <a class="demo" href="https://och-karr.github.io/kanban_board/" target="_blank"><i class="fa fa-search"></i></a>
+                <a class="code" href="https://github.com/och-karr/kanban_board" target="_blank"><i class="fa fa-link"></i></a>
+              </div>
             </div>
-            <div class="image"></div>
+            <div class="project-image" style='background: url("./images/a-kanban-board.JPG"); background-size: cover;'></div>
           </div>
 
           <div class="image-container">
             <div class="pic-on">
-              <h3></h3>
-              <p></p>
-              <a class="demo" target="_blank"><i class="fa fa-search"></i></a>
-              <a class="code" target="_blank"><i class="fa fa-link"></i></a>
+              <h3 class="project-title">Country search engine</h3>
+              <p class="project-decription">Wyszukiwarka krajów wykorzystująca API, napisana w jQuery.</p>
+              <div class="projects-icon-links">
+                <a class="demo" href="https://och-karr.github.io/country_search_engine/" target="_blank"><i class="fa fa-search"></i></a>
+                <a class="code" href="https://github.com/och-karr/country_search_engine" target="_blank"><i class="fa fa-link"></i></a>
+              </div>
             </div>
-            <div class="image"></div>
+            <div class="project-image" style='background: url("./images/a-country-search-engine.JPG"); background-size: cover;'></div>
           </div>
 
           <div class="image-container">
             <div class="pic-on">
-              <h3></h3>
-              <p></p>
-              <a class="demo" target="_blank"><i class="fa fa-search"></i></a>
-              <a class="code" target="_blank"><i class="fa fa-link"></i></a>
+              <h3 class="project-title">Stopwatch</h3>
+              <p class="project-decription">Stoper - aplikacja napisana z wykorzystaniem składni ES6.</p>
+              <div class="projects-icon-links">
+                <a class="demo" href="https://och-karr.github.io/stopwatch_ES6/#" target="_blank"><i class="fa fa-search"></i></a>
+                <a class="code" href="https://github.com/och-karr/stopwatch_ES6" target="_blank"><i class="fa fa-link"></i></a>
+              </div>
             </div>
-            <div class="image"></div>
+            <div class="project-image" style='background: url("./images/a-stopwatch.JPG"); background-size: cover;'></div>
           </div>
 
           <div class="image-container">
             <div class="pic-on">
-              <h3></h3>
-              <p></p>
-              <a class="demo" target="_blank"><i class="fa fa-search"></i></a>
-              <a class="code" target="_blank"><i class="fa fa-link"></i></a>
+              <h3 class="project-title">Simon game</h3>
+              <p class="project-decription">Prosta gra napisana w języku JavaScript na bazie tutorialu Free Code Camp.</p>
+              <div class="projects-icon-links">
+                <a class="demo" href="https://och-karr.github.io/simon-game/" target="_blank"><i class="fa fa-search"></i></a>
+                <a class="code" href="https://github.com/och-karr/simon-game" target="_blank"><i class="fa fa-link"></i></a>
+              </div>
             </div>
-            <div class="image"></div>
+            <div class="project-image" style='background: url("./images/a-simon-game.JPG"); background-size: cover;'></div>
           </div>
 
           <div class="image-container">
             <div class="pic-on">
-              <h3></h3>
-              <p></p>
-              <a class="demo" target="_blank"><i class="fa fa-search"></i></a>
-              <a class="code" target="_blank"><i class="fa fa-link"></i></a>
+              <h3 class="project-title">Rock paper scissors</h3>
+              <p class="project-decription">Gra napisana w języku JavaScript. Wygląd wykonany przy wykorzystaniu Bootstrapa.</p>
+              <div class="projects-icon-links">
+                <a class="demo" href="https://och-karr.github.io/rock_paper_scissors/" target="_blank"><i class="fa fa-search"></i></a>
+                <a class="code" href="https://github.com/och-karr/rock_paper_scissors" target="_blank"><i class="fa fa-link"></i></a>
+              </div>
             </div>
-            <div class="image"></div>
+            <div class="project-image" style='background: url("./images/a-rock-paper-scissors.JPG"); background-size: cover;'></div>
           </div>
 
         </div>
@@ -155,60 +169,60 @@
       </div>
 
 
-      <div class="section section-4" id="section-4">
+      <div class="section technologies-section" id="technologies-section">
 
-        <h2>Technologie<div class="line"></div></h2>
+        <h2 class="section-title">Technologie<div class="line"></div></h2>
 
-        <p>
-          W swoich projektach wykorzystuję najczęściej <span>HTML</span>,  <span>CSS</span> oraz  <span>JavaScript</span>. 
+        <p class="basic-text">
+          W swoich projektach wykorzystuję najczęściej <span class="big">HTML</span>,  <span class="big">CSS</span> oraz  <span class="big">JavaScript</span>. 
           Dlatego czuję się najlepiej w tych technologiach. JavaScript to bardzo obszerny i złożony temat, 
           dlatego sporą część mojego czasu poświęcam na poszerzanie wiedzy w tematyce tego języka. 
-          W moich projektach wykorzystywałam również <span>jQuery</span> (np. <a href="https://och-karr.github.io/kanban_board/" target="_blank">Kanban board</a>),
-           <span>Ajax API</span> (<a href="https://och-karr.github.io/country_search_engine/" target="_blank">Country Search Engine</a>)
-           oraz <span>Sass</span> (<a href="https://och-karr.github.io/rwd_website/" target="_blank">RWD website</a> albo przy wykonywaniu tej strony).
-            Znana jest mi biblioteka <span>Bootstrap</span> oraz program <span>Avocode</span>
-           (analiza projektu graficznego w formacie psd, export grafik). W kursie miałam również do czynienia z <span>Reactem</span> 
-           (przykładowy projekt dostępny <a href="https://github.com/och-karr/zadanie_14_5" target="_blank">tutaj</a> ). 
+          W moich projektach wykorzystywałam również <span class="big">jQuery</span> (np. <a class="go-to-example" href="https://och-karr.github.io/kanban_board/" target="_blank">Kanban board</a>),
+           <span class="big">Ajax API</span> (<a class="go-to-example" href="https://och-karr.github.io/country_search_engine/" target="_blank">Country Search Engine</a>)
+           oraz <span class="big">Sass</span> (<a class="go-to-example" href="https://och-karr.github.io/rwd_website/" target="_blank">RWD website</a> albo przy wykonywaniu tej strony).
+            Znana jest mi biblioteka <span class="big">Bootstrap</span> oraz program <span class="big">Avocode</span>
+           (analiza projektu graficznego w formacie psd, export grafik). W kursie miałam również do czynienia z <span class="big">Reactem</span> 
+           (przykładowy projekt dostępny <a class="go-to-example" href="https://github.com/och-karr/zadanie_14_5" target="_blank">tutaj</a> ). 
            Wiedzę z Reacta pogłębiam w tym momencie robiąc kurs na Udemy – 
-           efekt mojej pracy można zobaczyć <a href="https://github.com/och-karr/bookstore" target="_blank">tutaj</a>. 
-           Nauczyłam się również podstaw <span>PHP</span>, które wykorzystałam do wykonania <a href="http://contactform2-com.stackstaging.com/" target="_blank">formularza</a>.
+           efekt mojej pracy można zobaczyć <a class="go-to-example" href="https://github.com/och-karr/bookstore" target="_blank">tutaj</a>. 
+           Nauczyłam się również podstaw <span class="big">PHP</span>, które wykorzystałam do wykonania <a class="go-to-example" href="http://contactform2-com.stackstaging.com/" target="_blank">formularza</a>.
         </p>
       
       </div>
 
 
-      <div class="section section-5" id="section-5">
+      <div class="section contact-section" id="contact-section">
 
-        <h2>Kontakt<div class="line"></div></h2>
+        <h2 class="section-title">Kontakt<div class="line"></div></h2>
 
         <div class="contact-columns">
 
-          <div class="col-md-6 my-buttons">      
-            <h3>Dane kontaktowe</h3>
+          <div class="col-md-6 my-data">      
+            <h3 class="my-data-title">Dane kontaktowe</h3>
             <div class="my-btn-container">
                 <div class="my-btn">
-                  <i class="fas fa-map-marker-alt"></i><span><a class="city" href="https://www.google.com/maps?q=krak%C3%B3w&um=1&ie=UTF-8&sa=X&ved=0ahUKEwicsIj27vbdAhWDCCwKHYuXA_0Q_AUIDigB" target="_blank">Kraków</a></span>
+                  <i class="fas fa-map-marker-alt"></i><span><a class="contact-icon-description" href="https://www.google.com/maps?q=krak%C3%B3w&um=1&ie=UTF-8&sa=X&ved=0ahUKEwicsIj27vbdAhWDCCwKHYuXA_0Q_AUIDigB" target="_blank">Kraków</a></span>
                 </div>
                 <div class="my-btn">
-                  <i class="fas fa-mobile-alt"></i><span><a href="tel:+508893332">508-893-332</a></span>
+                  <i class="fas fa-mobile-alt"></i><span><a class="contact-icon-description" href="tel:+508893332">508-893-332</a></span>
                 </div>
                 <div class="my-btn">
-                  <i class="fas fa-envelope"></i><span><a href="mailto:och.pudlo@gmail.com">och.pudlo@gmail.com</a></span>
+                  <i class="fas fa-envelope"></i><span><a class="contact-icon-description" href="mailto:och.pudlo@gmail.com">och.pudlo@gmail.com</a></span>
                 </div>
             </div>
           </div>
 
-          <div  class="col-md-6 my-buttons social-media">
-            <h3>Social media</h3>
+          <div  class="col-md-6 my-data">
+            <h3 class="my-data-title">Social media</h3>
             <div class="my-btn-container">
               <div class="my-btn">
-                <i class="fab fa-facebook-f"></i><span><a href="https://www.facebook.com/och.pudlo" target="_blank">https://www.facebook.com/och.pudlo</a></span>
+                <i class="fab fa-facebook-f"></i><span><a class="contact-icon-description" href="https://www.facebook.com/och.pudlo" target="_blank">https://www.facebook.com/och.pudlo</a></span>
               </div>
               <div class="my-btn">
-                <i class="fab fa-linkedin-in"></i><span><a href="http://bit.ly/och-pudlo-linkedin" target="_blank">http://bit.ly/och-pudlo-linkedin</a></span>
+                <i class="fab fa-linkedin-in"></i><span><a class="contact-icon-description" href="http://bit.ly/och-pudlo-linkedin" target="_blank">http://bit.ly/och-pudlo-linkedin</a></span>
               </div>
               <div class="my-btn">
-                <i class="fab fa-github"></i><span><a href="https://github.com/och-karr" target="_blank">https://github.com/och-karr</a></span>
+                <i class="fab fa-github"></i><span><a class="contact-icon-description" href="https://github.com/och-karr" target="_blank">https://github.com/och-karr</a></span>
               </div>
             </div>
           </div>
@@ -220,7 +234,7 @@
 
       <footer>
 
-        <p>Karolina Och-Pudło - 2019 - All rights reserved</p>
+        <p class="footer-text">Karolina Och-Pudło - 2019 - All rights reserved</p>
 
       </footer>
 
