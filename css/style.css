@@ -48,7 +48,7 @@ body { margin: auto; font-family: 'Poppins', sans-serif; font-size: 0.65em; over
 /* ---PROJECTS-SECTION--- */
 .projects-section .projects-container { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-.projects-section .projects-container .image-container { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-wrap: wrap; flex-wrap: wrap; background-position: 100% 0; background-size: 800%; background-image: linear-gradient(135deg, rgba(19, 19, 19, 0.918) 50%, transparent 50%); transition: background 0.4s; width: 300px; height: 200px; position: relative; margin: 10px; }
+.projects-section .projects-container .image-container { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-wrap: wrap; flex-wrap: wrap; background-position: 100% 0; background-size: 800%; background-image: linear-gradient(135deg, rgba(19, 19, 19, 0.918) 50%, transparent 50%); transition: background 0.4s; width: 300px; height: 200px; position: relative; margin: 10px 0; }
 
 .projects-section .projects-container .image-container .project-image { position: absolute; width: 300px; height: 200px; z-index: -2; left: 0px; }
 
