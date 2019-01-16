@@ -113,8 +113,22 @@
 
     .contact-section {
 
-        .fas, .fab {
-            @include icon-size(30px);
+        .contact-columns {
+
+            .my-btn-container {
+                padding-left: 0;
+
+                .my-btn {
+
+                    .fas, .fab {
+                        @include icon-size(30px);
+
+                        .contact-icon-description {
+                            font-size: 1.7em;
+                        }
+                    }
+                }
+            }
         }
     }     
 }
