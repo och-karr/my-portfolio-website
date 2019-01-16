@@ -395,8 +395,16 @@ footer {
 
     .contact-section {
 
-        .my-btn {
-            pointer-events: none;
+        .contact-columns .my-data .my-btn-container {
+            padding-left: 0;
+
+            .my-btn {
+                pointer-events: none;
+
+                .contact-icon-description {
+                    font-size: 1.7em;
+                }
+            }
         }
     }
 

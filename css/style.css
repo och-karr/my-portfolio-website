@@ -112,7 +112,9 @@ footer .footer-text { margin: 0; }
   .my-navbar .my-buttons { display: none; }
   .my-navbar .my-nav-ul .my-link { padding: 0; }
   .my-navbar .my-nav-ul .my-link .go-to-section { font-size: 2.2em; }
-  .contact-section .my-btn { pointer-events: none; } }
+  .contact-section .contact-columns .my-data .my-btn-container { padding-left: 0; }
+  .contact-section .contact-columns .my-data .my-btn-container .my-btn { pointer-events: none; }
+  .contact-section .contact-columns .my-data .my-btn-container .my-btn .contact-icon-description { font-size: 1.7em; } }
 
 @media (max-width: 768px) { #square1 { top: 5%; right: -90%; }
   #square2 { top: 60%; left: -90%; }
