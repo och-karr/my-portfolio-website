@@ -1,3 +1,17 @@
+/* ---MIXINS--- */
+
+@mixin space-around {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@mixin icon-size($size) {
+    width: $size;
+    height: $size;
+    line-height: $size;
+}
+
 /* ---MEDIA--- */
 
 @media (max-width: 1200px) {
