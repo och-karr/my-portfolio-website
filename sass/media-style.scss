@@ -2,10 +2,8 @@
 
 @media (max-width: 1200px) {
 
-    .contact-section {
-        .my-btn-container {
-            padding-left: 0;
-        }
+    .contact-section .contact-columns .my-data .my-btn-container {
+        padding-left: 0; 
     }
 }
 
@@ -115,7 +113,7 @@
 
         .contact-columns {
 
-            .my-btn-container {
+            .my-data .my-btn-container {
                 padding-left: 0;
 
                 .my-btn {
@@ -130,5 +128,5 @@
                 }
             }
         }
-    }     
+    }
 }
