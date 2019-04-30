@@ -27,6 +27,7 @@
     "animate.css": "^3.7.0",
     "aos": "^2.3.3",
     "autoprefixer": "^9.4.5",
+    "globstar": "^1.0.0",
     "node-sass": "^4.9.4",
     "normalize.css": "^8.0.0",
     "npm-run-all": "^4.1.3",
